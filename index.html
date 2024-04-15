@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tope A. Portfolio Page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Tope A.</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">John Doe</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-photo.jpg" alt="Temitope profile picture" class="profile-photo" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Tope Adebayo</h1>
+        <p class="section__text__p2"><span></span></p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/tope-a-cv.pdf')"
+          >
+            Download CV
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/temiNatorX/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-me-photo.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Certification</h3>
+              <p>HiiT Training Institute<br />6 Months Training</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Computer Science,<br />Babcock University</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <h3>Hello again, I'm Temitope</h3>
+            <p>
+              I'm a Web Developer, Graphics Designer and an Expert in MS Office
+              Suite Tools. I am currently based in Lagos, Nigeria. I love
+              creating beautiful websites and graphics for my customers. Please
+              feel free to contact me anytime.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#services'"
+      />
+    </section>
+    <section id="services">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Services</h1>
+      <div class="service_row">
+        <div class="services_containers">
+          <img
+            src="./assets/web_design.png"
+            alt="Web Design Pic"
+            class="service_icon"
+          />
+          <h3>WEB DEVELOPMENT</h3>
+          <p>
+            I specialize in crafting beautiful and user-friendly user interfaces
+            (UIs) that come to life with clean, responsive code. I can transform
+            your website's visual identity using HTML, CSS, and JavaScript.
+          </p>
+        </div>
+        <div class="services_containers">
+          <img
+            src="./assets/ms-office.png"
+            alt="MS Office"
+            class="service_icon"
+          />
+          <h3>MICROSOFT OFFICE</h3>
+          <p>
+            I can help you create professional documents, reports, and proposals
+            with superior formatting, styles, and templates. I can unlock the
+            full potential of Excel and craft compelling presentations that
+            engage your audience.
+          </p>
+        </div>
+        <div class="services_containers">
+          <img
+            src="./assets/graphic-design.png"
+            alt="Graphics Design"
+            class="service_icon"
+          />
+          <h3>GRAPHICS DESIGN</h3>
+          <p>
+            I can create a cohesive and memorable brand identity for your
+            business or project. This includes designing logos, color palettes,
+            typography systems, and brand guidelines that ensure consistent
+            visual communication across all platforms.
+          </p>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Web Projects</h1>
+      <div class="projects-container">
+        <div class="box portfolio-item" onclick= mySunnySide()>
+          <img src="./assets/sunnyside.jpg" alt="SunnySide">
+          <div class="overlay">
+            <h4>SUNNYSIDE AGENCY</h4>
+          </div>
+        </div>
+        <div class="box portfolio-item" onclick= myAgeCalculator()>
+          <img src="./assets/age-calculator.jpg" alt="Age Calculator">
+          <div class="overlay">
+            <h4>AGE CALCULATOR APP</h4>
+          </div>
+        </div>
+        <div class="box portfolio-item" onclick=mySocialLinks()>
+          <img src="./assets/social-links-profile.jpg" alt="Social Links">
+          <div class="overlay">
+            <h4>SOCIAL LINKS PROFILE</h4>
+          </div>
+        </div>
+        <div class="box portfolio-item" onclick= myCrowdFunding()>
+          <img src="./assets/crowdfunding-product.jpg" alt="Crowdfunding Product">
+          <div class="overlay">
+            <h4>CROWDFUNDING PRODUCT</h4>
+          </div>
+        </div>
+        <div class="box portfolio-item" onclick= myIntroComponent()>
+          <img src="./assets/intro-component.jpg" alt="Intro Component">
+          <div class="overlay">
+            <h4>INTRO COMPONENT</h4>
+          </div>
+        </div>
+        <div class="box portfolio-item" onclick= myTipCalculator()>
+          <img src="./assets/tip-calculator.jpg" alt="Tip Calculator">
+          <div class="overlay">
+            <h4>TIP CALCULATOR APP</h4>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Let's Discuss</h3>
+          <ul>
+            <li>
+              <img src="./assets/telephone.png" alt="Telephone" class="icon"> <span>09144091508</span>
+            </li>
+            <li>
+             <img src="./assets/email.png" alt="Email" class="icon"> <span>tbayo1985@gmail.com</span>
+            </li>
+            <li>
+              <img src="./assets/github.png" alt="GitHub" class="icon"> <span>temiNatorX</span>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-form">
+          <h3>Get in Touch</h3>
+          <form id="contact-form" action="" onsubmit="return(formSubmit())" name="myForm">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" >
+              <span class="error-message"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject:</label>
+              <input type="text" id="subject" name="subject">
+              <span class="error-message"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email">
+              <span class="error-message"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message"></textarea>
+              <span class="error-message"></span>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-color-2">
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &#169; Tope A.</p>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
