@@ -1,3 +1,7 @@
+function topOfPage() {
+  window.scrollTo({ top: 0, behavior: 'smooth' }); 
+}
+
 function toggleMenu() {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
@@ -15,7 +19,7 @@ const errorMessages = document.querySelectorAll('.error-message');
 
 function mySunnySide(){
   var link = document.createElement("a")
-  link.href = "https://teminatorx.github.io/sunnyside-agency/"
+  link.href = "https://teminatorx.github.io/sunnyside-project/"
   link.target = "_blank"
   link.click()
 }
